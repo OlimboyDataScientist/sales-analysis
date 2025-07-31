@@ -1,0 +1,6 @@
+-- database: ./superstore_sales.db
+
+SELECT Region, AVG(Profit) AS average_profits FROM sales
+WHERE Profit > 300
+GROUP BY Region
+ORDER BY average_profits DESC
